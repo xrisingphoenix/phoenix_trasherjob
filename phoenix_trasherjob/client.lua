@@ -19,6 +19,25 @@ AddEventHandler('onClientResourceStart', function(ressourceName)
     print("" ..ressourceName.." started sucessfully")
 end)
 
+local PlayerData = {}
+
+RegisterNetEvent('esx:playerLoaded')
+AddEventHandler('esx:playerLoaded', function(xPlayer)
+	PlayerData = xPlayer
+end)
+
+RegisterNetEvent('esx:setJob')
+AddEventHandler('esx:setJob', function(job)
+  PlayerData.job = job
+end)
+
+Citizen.CreateThread(function()
+    while ESX.GetPlayerData().job == nil do
+        Citizen.Wait(10)
+    end 
+    PlayerData = ESX.GetPlayerData()
+end)
+
 local count = 1
 local curr_label
 local endstufe = false
