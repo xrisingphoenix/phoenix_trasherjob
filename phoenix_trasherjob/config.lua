@@ -83,11 +83,10 @@ Config.Clothing = {
 Config.Chance = 100 -- Chance to even get a reward from RewardList (100 = 100%) - set to 0 to disable 
 Config.RewardList = {
     {item = "black_money", chance = 5, amount = {200, 700}},    -- 5% Chance, Amount: 200 to 700
-    {item = "zetony", chance = 15, amount = {50, 100}},       -- 15% Chance, Amount: 1 to 5
-    {item = "heroin", chance = 2, amount = {1, 2}},            -- 20% Chance, Amount: 1 to 2
+    {item = "casino_chips", chance = 15, amount = {50, 100}},       -- 15% Chance, Amount: 1 to 5
+    {item = "coke", chance = 2, amount = {1, 2}},            -- 20% Chance, Amount: 1 to 2
     {item = "lighter", chance = 40, amount = {1, 1}},           -- 30% Chance, Amount: 1 to 3
-    {item = "item_cigarette", chance = 30, amount = {1, 5}},   -- 20% Chance, Amount: 1 to 10
-    {item = "item_gasmaske", chance = 2, amount = {1, 1}}      -- 10% Chance, Amount: 1
+    {item = "metal", chance = 30, amount = {1, 5}},   -- 20% Chance, Amount: 1 to 10
 }
 
 
